@@ -17,15 +17,15 @@ def generate_datapack():
     shrink_cmd = (
         "# Shrink player to 1/5th size\n"
         "attribute @s minecraft:scale base set 0.2\n"
-        "attribute @s minecraft:movement_speed base set 0.075\n"
+        "attribute @s minecraft:movement_speed base set 0.072\n"
         "attribute @s minecraft:jump_strength base set 0.28\n"
-        "attribute @s minecraft:block_interaction_range base set 2.0\n"
-        "attribute @s minecraft:entity_interaction_range base set 2.0\n"
+        "attribute @s minecraft:block_interaction_range base set 2.5\n"
+        "attribute @s minecraft:entity_interaction_range base set 2.5\n"
         "attribute @s minecraft:step_height base set 0.4\n"
         "attribute @s minecraft:max_health base set 10\n"
         "attribute @s minecraft:gravity base set 0.04\n"
         "attribute @s minecraft:safe_fall_distance base set 12.0\n"
-        "effect give @s minecraft:instant_health 1 255 true"
+        "attribute @s minecraft:camera_distance base set 8"
     )
 
     reset_cmd = (
@@ -39,7 +39,8 @@ def generate_datapack():
         "attribute @s minecraft:max_health base reset\n"
         "attribute @s minecraft:gravity base reset\n"
         "attribute @s minecraft:safe_fall_distance base reset\n"
-        "effect give @s minecraft:instant_health 1 255 true"
+        "attribute @s minecraft:camera_distance base reset\n"
+        "effect give @s minecraft:regeneration 1 255 true"
     )
 
     try:
